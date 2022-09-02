@@ -27,9 +27,12 @@ if (attack) {
 		_attack.speed = 10;
 		_attack.direction = point_direction(_attack.x, _attack.y, mouse_x, mouse_y);
 		
-		var _ang = point_direction(x, y, mouse_x, mouse_y);
-		var _diff = angle_difference(_ang, image_angle);
+		var _dir = point_direction(x, y, mouse_x, mouse_y);
+		
+		var _diff = angle_difference(_dir, image_angle);
 		_attack.image_angle += median(-500, _diff, 500);
+		
+		knife.slash();
 	}
 }
 

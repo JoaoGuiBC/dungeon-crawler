@@ -26,18 +26,20 @@ repeat(abs(vspd)) {
 	}
 }
 
-var _dir = point_direction(x, y, mouse_x, mouse_y);
+if (selected_attack == 0) {
+	var _dir = point_direction(x, y, mouse_x, mouse_y);
+	
+	var _x = x + lengthdir_x(sprite_width, _dir);
+	var _y = y + lengthdir_y(sprite_height, _dir);
 
-var _x = x + lengthdir_x(sprite_width, _dir);
-var _y = y + lengthdir_y(sprite_height, _dir);
+	knife.x = _x;
+	knife.y = _y;
+	knife.image_angle = _dir - 90;
 
-knife.x = _x;
-knife.y = _y;
-knife.image_angle = _dir - 90;
+	if (mouse_x > x) {
+		knife.image_xscale = -1;
 
-if (mouse_x > x) {
-	knife.image_xscale = -1;
-
-} else {
-	knife.image_xscale = 1;
+	} else {
+		knife.image_xscale = 1;
+	}
 }

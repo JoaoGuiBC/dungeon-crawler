@@ -19,12 +19,12 @@ vspd = lengthdir_y(spd, move_dir);
 
 if (attack) {
 	i += 1;
-	i = i mod 20;
+	i = i mod 50;
 	
 	if (i == 0) {
-		var _attack = instance_create_layer(x, y, "attacks", obj_bullet);
+		var _attack = instance_create_layer(x, y, "attacks", obj_rock);
 	
-		_attack.speed = 10;
+		_attack.speed = 5;
 		_attack.direction = point_direction(_attack.x, _attack.y, mouse_x, mouse_y);
 		
 		var _dir = point_direction(x, y, mouse_x, mouse_y);

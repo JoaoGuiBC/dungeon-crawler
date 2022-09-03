@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_block",
-    "path": "sprites/spr_block/spr_block.yy",
+    "name": "spr_fire",
+    "path": "sprites/spr_fire/spr_fire.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,15 +21,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "power",
+    "path": "folders/Objetos/power.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_fire",
   "tags": [],
   "resourceType": "GMObject",
 }

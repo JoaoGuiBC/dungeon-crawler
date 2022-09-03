@@ -1,5 +1,5 @@
 // Select next attack
-if (selected_attack < 4) {
+if (selected_attack < 3) {
 	selected_attack++;
 	
 	// Destroy knife when is unselected

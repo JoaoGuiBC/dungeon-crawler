@@ -19,7 +19,6 @@ create_knife = function() {
 
 // Attack 
 create_attack = function() {
-
 	if (attack_delay <= 0) {
 		if (selected_attack == 0) {
 			knife.slash();

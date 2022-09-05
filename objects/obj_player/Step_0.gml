@@ -19,3 +19,6 @@ attack_delay--;
 if (attack) {	
 	create_attack();
 }
+
+// Fix depth
+depth = -bbox_bottom;

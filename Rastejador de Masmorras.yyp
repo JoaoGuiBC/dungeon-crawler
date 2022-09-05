@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"order":1,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":6,},
+    {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},"order":0,},
     {"id":{"name":"obj_knife","path":"objects/obj_knife/obj_knife.yy",},"order":4,},
     {"id":{"name":"spr_fire","path":"sprites/spr_fire/spr_fire.yy",},"order":0,},
     {"id":{"name":"spr_knife_attack","path":"sprites/spr_knife_attack/spr_knife_attack.yy",},"order":1,},
@@ -13,6 +14,7 @@
     {"id":{"name":"spr_knife","path":"sprites/spr_knife/spr_knife.yy",},"order":0,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},"order":2,},
+    {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"order":0,},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},"order":2,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_aim","path":"objects/obj_aim/obj_aim.yy",},"order":3,},
@@ -50,6 +52,8 @@
     {"folderPath":"folders/Sprites/knife.yy","order":7,"resourceVersion":"1.0","name":"knife","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/powers.yy","order":8,"resourceVersion":"1.0","name":"powers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objetos/power.yy","order":5,"resourceVersion":"1.0","name":"power","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/enemies.yy","order":9,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objetos/enemies.yy","order":7,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

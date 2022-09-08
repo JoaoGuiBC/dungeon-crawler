@@ -98,7 +98,27 @@ walking_state = function() {
 	// Check if it should change the selected behavior
 	change_state([idle_state, walking_state]);
 };
-chase_state = function() {}
-attacking_state = function() {}
+chase_state = function() {
+	// Check if target exists
+	if (instance_exists(target)) {
+		// Get target direction
+		var _dir = point_direction(x, y, target.x, target.y);
+		
+		// Move into target direction
+		spd = 2.5;
+		hspd = lengthdir_x(spd, _dir);
+		vspd = lengthdir_y(spd, _dir);
+		
+		// Get target distance
+		var _dist = point_distance(x, y, target.x, target.y);
+		
+		// If target is far, stop chase
+		if (_dist > xfov * 1.5) {
+			state = idle_state;
+		}
+	} else {
+		change_state([idle_state, walking_state]);
+	}
+}
 
 state = idle_state;
